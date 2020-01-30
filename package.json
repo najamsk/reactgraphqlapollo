@@ -4,14 +4,18 @@
   "description": "app that lists spacex launch missions",
   "main": "server.js",
   "scripts": {
-      "start": "node server.js",
-      "server": "nodemon server.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "client": "HOST=localhost npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client \"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "najam sikander awan",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "graphql": "^14.6.0"
