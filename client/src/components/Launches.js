@@ -33,7 +33,7 @@ const LAUNCHES_QUERY = gql`
 const queryLoading = (loading) => {
     console.log("loading=", loading);
     if (loading){
-        return "<h2>loading ...</h2>";
+        return <h5>Loading ...</h5>;
     }
 };
 const queryError = (error) => {

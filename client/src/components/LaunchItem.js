@@ -6,7 +6,7 @@ const LaunchItem  = (props) => {
         <div key={props.key} className="card card-body mb-3">
             <div className="row">
                 <div className="col-md-9">
-                    <h4>{props.mission_name}</h4>
+                    <h4>Mission: {props.mission_name}</h4>
                     <p>{props.launch_date_local}</p>
                 </div>
                 <div className="col-md-3">
